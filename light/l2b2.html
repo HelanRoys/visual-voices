@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Divs Example</title>
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <style>
+       body {
+    align-items: center;
+    font-family: 'Bubblegum Sans';
+    line-height: 1.6;
+    color: #333;
+    background-image: url(gbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 20px;
+}
+
+.dis {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;        
+    width: 300px;              
+    height: 400px;              
+    border: solid black 3px;
+    border-radius: 8px;
+    transition: 0.2s;
+    background-color: white;
+    padding: 20px;
+}
+
+.dis img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.quiz:hover, .box:hover, .previous:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.quiz {
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: 'Bubblegum Sans';
+    font-size: 20px;
+    text-align: left;
+}
+
+.box, .quiz, .previous {
+    top: 50px;
+}
+
+.Next-button, .previous-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+}
+
+.previous-btn {
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+            bottom: 10px;
+            left: 20px;
+        }
+        .finish-btn{
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+            bottom: 10px;
+            right: 20px; 
+            background-color: #4CAF50;
+        }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        
+            <div class="dis"><img src="horse.jpeg" height="200px" width="200px">
+           
+        <h2>Horse</h2>
+        <p>Use your hand to mimic a horse mane by sweeping your fingers down from the top of your head.</p>
+            </div>
+        </button>
+    
+        <div class="dis"><img src="rabbit-webp.webp" height="200px" width="200px">
+            
+        <h2>Rabbit</h2>
+        <p>Place both hands in front of your mouth and wiggle your fingers to represent bunny ears.</p>
+            </div>
+        </button>
+       
+        <div class="dis"><img src="pet-webp.webp" height="200px" width="200px">
+            
+        <h2>Pet</h2>
+        <p>Pat your own leg or make a petting motion with one hand to indicate affection.</p>
+            </div>
+        </button>
+    
+    
+
+
+    </div>
+   <a href="l2b1.html" class="previous-btn">Previous</a>
+   <a href="frontpage.html" class="finish-btn">Finish</a>
+</body>
+</html>
+

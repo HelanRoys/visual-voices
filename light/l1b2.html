@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Divs Example</title>
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <style>
+        button{
+            background-color: white;
+        }
+        body {
+            align-items: center;
+            font-family: 'Bubblegum Sans';
+            font-family:"Bubblegum Sans";
+            line-height: 1.6;
+            color: #333;
+            background-image: url(gbg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-size: 30px;
+        }
+        .container {
+            display: flex;
+            align-items: center; 
+            margin-top: 150px;   
+        }
+        .box {
+            position: relative;
+            width: 1000px;
+            height: 400px;
+            border: solid black 3px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: .2s;
+        }
+        .next:hover,.box:hover,.previous:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .next{
+            transition: .2s;
+            position: relative;
+            float: right;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: left;
+        }
+        .box,.next,.previous{
+            top: 50px;
+        }
+        .dis{
+            position: relative;
+
+            font-family: 'Bubblegum Sans';
+        }
+        .previous-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+            bottom: 10px;
+            left: 20px;
+        }
+        .Next-button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="box"><div class="dis"><img src="run-webp.webp" height="150px" width="250px"><h2>Run</h2><p>Make two L-shaped hands by extending your pointer and thumb and tucking your other fingers into your palms</p></div></button>
+        <button class="box"><div class="dis"><img src="jump-webp.webp" height="150px" width="250px"><h2>Jump</h2><p>You make you non-dominant hand flat to make the land. Then on your dominant hand, extend your middle and index fingers to make a little man, and jump him up and down</p></div></button>
+        <button class="box"><div class="dis"><img src="walk-webp.webp" height="150px" width="250px"><h2>Walk</h2><p>Take both hands with fingers extended and held together on each hand. Position the palms facing the ground and move one palm up, forward and down. Then move the other palm up, forward and down.</p></div></button>
+        <button class="box"><div class="dis"><img src="stop-webp.webp" height="150px" width="250px"><h2>Stop</h2><p>Hold one hand out in front of you with your palm facing up. Use your other hand to chop down onto the palm of your first hand </p></div></button>
+
+    </div>
+   
+    <a href="l1b1.html" class=previous-btn>Previous</a>
+    <a href="l1m1.html" class=Next-button>Next</a>
+    
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Divs Example</title>
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <style>
+        
+        body {
+            align-items: center;
+            font-family: 'Bubblegum Sans';
+            font-family:"Bubblegum Sans";
+            line-height: 1.6;
+            color: #333;
+            background-image: url(gbg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-size: 30px;
+            
+        }
+        .container {
+            display: flex;
+            align-items: center;  
+            margin-top: 150px;
+        }
+        .box {
+            position: relative;
+            width: 1000px;
+            height: 400px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: .2s;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: solid black 3px;
+            cursor: pointer; 
+            overflow: hidden;
+            
+        }
+        .next:hover,.box:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .next{
+            transition: .2s;
+            position: relative;
+            float: right;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: left;
+        }
+        .box,.next{
+            top: 50px;
+        }
+        .dis{
+            position: relative;
+            top: 00px;
+            font-family: 'Bubblegum Sans';
+            display: flex;
+            flex-direction: column;
+        }
+        .box img {
+        max-width: 200px; 
+        max-height: 200px; 
+        margin-right: 60px; 
+        position: relative;
+        margin-left: 80px;
+        }
+       
+        
+        .Next-button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="box"><div class="dis"><img src="eat-webp.webp"><h2>Eat</h2><p>Hold your arm near the side of your body, roughly at chest level
+        </p></div></button>
+        <button class="box"><div class="dis"><img src="drink-webp.webp"><h2>Drink</h2><p>Take your hand up to your mouth as if drinking from the cup.
+        </p></div></button>
+        <button class="box"><div class="dis"><img src="play-webp.webp"><h2>Play</h2><p>stick your thumbs and pinkie fingers out, while curving the rest of your fingers in. Then wiggle both 'Y' hands around and in front of you
+        </p></div></button>
+        <button class="box"><div class="dis"><img src="sleep-webp.webp"><h2>Sleep</h2><p>Put your two hands together, palm-to-palm. Then place your hands at an angle by the side of your head, and rest your cheek on your hands as if they were a pillow.
+        </p></div></button>
+    </div>
+    <a href="l1b2.html" class="Next-button">Next</a>
+    
+</body>
+</html>

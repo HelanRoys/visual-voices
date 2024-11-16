@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <style>
+        .f,.an,.ar{
+            animation-name: yo;
+            position: relative;
+            animation-duration: 2s ;
+            animation-iteration-count: infinite;
+        }
+        @keyframes yo {
+            0%{transform: rotate(0);}
+            50%{transform: rotate(5deg);}
+            100%{transform: rotate(-5deg);}
+        }
+        body {
+            font-family: "Bubblegum Sans";
+            line-height: 1.6;
+            color: #333;
+            background-image: url(cloud.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+           
+            background-size: 150% 200%;
+        }
+        
+        .main {
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(11, 11, 75);
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 70px;
+            position: fixed;
+            bottom: 250px;
+            left: 400px;
+        
+        }
+        .button {
+            position: relative;
+            border: none;
+            width: 270px;
+            height: 170px;
+            border-radius: 20px;
+            transition: .2s;
+            background-size: cover;
+            background-position: center;
+        }
+        
+
+        .button:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+
+        .f {
+            
+            background-image: url(generate\ a\ cartoon\ image\ similar\ to\ this\ written\ animals\ with\ mountain\ in\ green\ and\ white\ as\ background.jpg);
+            width: 300px;
+            height: 300px;
+        }
+        .an{
+            background-image: url(generate\ a\ cartoon\ image\ similar\ to\ this\ written\ verbs\ with\ mountain\ in\ green\ and\ white\ as\ background.jpg);
+            width: 300px;
+            height: 300px;
+        }
+
+        .ar {
+            background-image: url(cartoon\ image\ of\ mountain\ green\ and\ white\ and\ colour\ in\ which\ the\ word\ alphabet\ is\ written.jpg);
+            width: 300px;
+            height: 300px;
+        }
+
+       
+        
+        header {
+        
+        padding:5px;
+        color: #0f2f3e;
+    }
+        header h1 {
+        margin: 0;
+        font-family: 'Bubblegum Sans';
+        font-size: 2rem;
+        margin: 0px 20px;
+        color: black;
+      }
+        header a{
+            color:black ;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+        a:link { 
+            text-decoration: none; 
+        } 
+        a:visited { 
+            text-decoration: none; 
+        } 
+        a:hover { 
+    text-decoration: none; 
+        } 
+        a:active { 
+        text-decoration: none; 
+        }
+    footer {
+        background: #004d66;
+        color: #fff;
+        text-align: center;
+        position: relative;
+       
+        padding-top: 5px;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+    }
+   
+    
+    
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          <h1>Visual Voices <img id="m1" src="../visualvoice/icon/io-removebg-preview.png" width="50px" height=""></h1>
+          <nav>
+           <a href="home.html"> Home</a>
+            <a href=""> Lessons</a>
+            <a href="alumni.html">Achievers</a>
+            
+          </nav>
+        </div>
+        </header>
+    <div class="main">
+        <h1>Lessons</h1>
+        <div class="button-container">
+            
+            <a href="l2b1.html"><div class="button f"></div></a>
+            <a href="l1b1.html"><div class="button an"></div></a>
+            <a href="alphabet1.html"><div class="button ar"></div></a>
+        </div>
+        
+    </div>
+    <footer>
+        <p>&copy; 2024 "Breaking Barriers, Building Bridges"</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Divs Example</title>
+    <link href='https://fonts.googleapis.com/css?family=Bubblegum Sans' rel='stylesheet'>
+    <style>
+        button{
+            background-color: white;
+        }
+        body {
+            align-items: center;
+            font-family: 'Bubblegum Sans';
+            font-family:"Bubblegum Sans";
+            line-height: 1.6;
+            color: #333;
+            background-image: url(gbg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-size: 30px;
+        }
+        .container {
+            display: flex;
+            align-items: center; 
+            margin-top: 150px;   
+        }
+        .box {
+            position: relative;
+            width: 1000px;
+            height: 400px;
+            border: solid black 3px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: .2s;
+        }
+        .next:hover,.box:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+        .next{
+            transition: .2s;
+            position: relative;
+            float: right;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+            font-family: 'Bubblegum Sans';
+            font-size: 20px;
+            text-align: left;
+        }
+        .box,.next{
+            top: 50px;
+        }
+        .dis{
+            position: relative;
+            font-family: 'Bubblegum Sans';
+        }
+        
+        
+        .Next-button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="box" onclick="location.href='http://127.0.0.1:5500/visualvoice/lesson main2/dogs.html'">
+        <div class="dis"><img src="download.png" width="300px">
+        <h2>Dog</h2>
+        <p>Pat your hip with your fingers together</p>
+            </div>
+        </button>
+        <button class="box" onclick="location.href='http://127.0.0.1:5500/visualvoice/lesson main2/cats.html'">
+        <div class="dis"><img src="cat1.webp">
+        <h2>Cat</h2>
+        <p>Bring your dominant hand up to your cheek, with your palm open and fingers slightly relaxed.</p>
+            </div>
+        </button>
+        <button class="box" onclick="location.href='http://127.0.0.1:5500/visualvoice/lesson main2/birds.html'">
+        <div class="dis"><img src="birds.png">
+        <h2>Bird</h2>
+        <p>Make a beak shape with your thumb and index finger.</p>
+            </div>
+        </button>
+        <button class="box" onclick="location.href='http://127.0.0.1:5500/visualvoice/lesson main2/fish.html'">
+            <div class="dis"><img src="fish-webp.webp" height="170px" width="250px">
+        <h2>Fish</h2>
+        <p>Flatten your hand and wave it side to side, mimicking the motion of swimming.</p>
+            </div>
+        </button>    
+    </div>
+    <a href="l2b2.html" class="Next-button">Next</a>
+   
+    
+</body>
+</html>
